@@ -1,6 +1,7 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 const pageTitle = "Quartiers Ludiques - Accueil"
 ---
@@ -14,7 +15,7 @@ const pageTitle = "Quartiers Ludiques - Accueil"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <Navigation />
+        <Header />
 		<h1>{pageTitle}</h1>
 		<Footer />
 	</body>
