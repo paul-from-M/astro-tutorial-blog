@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
 
 const pageTitle = "Quartiers Ludiques - Accueil"
 ---
 
 <BaseLayout pageTitle = {pageTitle} >
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 	<h2>Les meilleurs jeux éducatifs</h2>
 </BaseLayout>
